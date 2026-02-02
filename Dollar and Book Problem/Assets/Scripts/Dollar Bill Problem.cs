@@ -21,10 +21,12 @@ public class DollarBillProblem : MonoBehaviour
 
         int payCalculation = payAmount;
 
+        //iterate through array of bill types
         for (int i = 0; i < bills.Length; i++)
         {
             int billValue = bills[i];
 
+            //check if needed 
             if (payCalculation >= billValue)
             {
                 int count = payCalculation / billValue;
